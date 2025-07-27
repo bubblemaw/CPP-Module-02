@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: masase <masase@student.42.fr>              +#+  +:+       +#+        */
+/*   By: maw <maw@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:15:05 by masase            #+#    #+#             */
-/*   Updated: 2025/07/21 23:06:58 by masase           ###   ########.fr       */
+/*   Updated: 2025/07/27 17:33:48 by maw              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 Fixed::Fixed(void)
 {
-    nb = 0;
     std::cout << "Default constructor called" << std::endl;
+    nb = 0;
 }
 
 Fixed::Fixed(const Fixed& obj)
 {
-    this->nb = obj.nb;
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << "Copy constructor called" << std::endl;    
+    this->nb = obj.getRawBits();
 }
 
 Fixed::~Fixed(void)
@@ -31,9 +31,10 @@ Fixed::~Fixed(void)
 
 Fixed& Fixed::operator=(const Fixed &obj)
 {
-    this->nb = obj.getRawBits();
-    return *this;
     std::cout << "Copy assignment operator called" << std::endl;
+    if (this != &obj)
+        this->nb = obj.getRawBits();
+    return *this;
 }
 
 int Fixed::getRawBits(void) const
@@ -44,5 +45,6 @@ int Fixed::getRawBits(void) const
 
 void Fixed::setRawBits(int const raw)
 {
+    std::cout << "setRawBits member function called" << std::endl;   
     this->nb = raw;
 }

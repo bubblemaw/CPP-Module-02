@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: masase <masase@student.42.fr>              +#+  +:+       +#+        */
+/*   By: maw <maw@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 16:35:06 by masase            #+#    #+#             */
-/*   Updated: 2025/07/22 16:38:23 by masase           ###   ########.fr       */
+/*   Updated: 2025/07/27 18:05:30 by maw              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int main( void )
 
     a = Fixed( 1234.4321f );
 
-    std::cout << "a is " << a << std::endl;
-    std::cout << "b is " << b << std::endl;
-    std::cout << "c is " << c << std::endl;
-    std::cout << "d is " << d << std::endl;
+    // std::cout << "a is " << a << std::endl;
+    // std::cout << "b is " << b << std::endl;
+    // std::cout << "c is " << c << std::endl;
+    // std::cout << "d is " << d << std::endl;
 
     std::cout << "a is " << a.toInt() << " as integer" << std::endl;
     std::cout << "b is " << b.toInt() << " as integer" << std::endl;

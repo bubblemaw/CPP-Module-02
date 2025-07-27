@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: masase <masase@student.42.fr>              +#+  +:+       +#+         #
+#    By: maw <maw@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/02 15:04:47 by masase            #+#    #+#              #
-#    Updated: 2025/07/21 20:49:24 by masase           ###   ########.fr        #
+#    Updated: 2025/07/27 17:34:19 by maw              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brain
+NAME = canon
 
 SRCS = main.cpp \
 	Fixed.cpp
