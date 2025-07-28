@@ -6,7 +6,7 @@
 /*   By: maw <maw@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:14:13 by masase            #+#    #+#             */
-/*   Updated: 2025/07/27 18:07:26 by maw              ###   ########.fr       */
+/*   Updated: 2025/07/28 18:57:16 by maw              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 class   Fixed
 {
     private:
-        int nb;
+        int value;
         static const int bit = 8;
     public:
-        Fixed(const int nb);
-        Fixed(const float nb);
+        Fixed(const int value);
+        Fixed(const float value);
         Fixed();
         Fixed(const Fixed& obj);
         ~Fixed();
@@ -32,7 +32,9 @@ class   Fixed
         int getRawBits(void) const;
         void setRawBits(int const raw);
         float toFloat(void) const;
-        int toInt(void) const;       
+        int toInt(void) const;
+        friend Fixed operator+(const Fixed &ob1, const Fixed &ob2);
+        friend Fixed operator-(const Fixed &ob1, const Fixed &ob2);  
 };
 
 #endif

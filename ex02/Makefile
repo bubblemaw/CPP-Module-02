@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: masase <masase@student.42.fr>              +#+  +:+       +#+         #
+#    By: maw <maw@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/02 15:04:47 by masase            #+#    #+#              #
-#    Updated: 2025/07/21 20:49:24 by masase           ###   ########.fr        #
+#    Updated: 2025/07/28 18:43:06 by maw              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRCS = main.cpp \
 
 OBJS = $(SRCS:%.cpp=%.o)
 
-FLAGS = -Wall -Werror -Wextra -std=c++98
+FLAGS = -Wall -Werror -Wextra -std=c++98 -g3
 
 RM = rm -f
 
