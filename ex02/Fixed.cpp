@@ -81,3 +81,11 @@ int Fixed::toInt(void) const
     int nb = this->nb / (1 << this->bit);
     return (nb);
 }
+
+Fixed& Fixed::operator*(const Fixed &obj)
+{
+    std::cout << "Copy assignment operator called" << std::endl;
+    if (this != &obj)
+        this->nb = obj.nb;
+    return *this;
+}
