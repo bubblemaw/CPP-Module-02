@@ -12,21 +12,30 @@
 
 #include "Point.hpp"
 
-Point::Point(void)
-{
-    std::cout << "Default constructor called" << std::endl;    
-}
-
-Point::Point(const float x, const float y)
+Point::Point(void): _x(0), _y(0)
 {
     std::cout << "Default constructor called" << std::endl;
-    this->_x = const Fixed(x);
-    this->_y = const Fixed(y);    
+}
+
+Point::Point(const float x, const float y): _x(x), _y(y)
+{
+    std::cout << "Default constructor called" << std::endl;
 }
 
 Point::Point(const Point &obj)
 {
     std::cout << "Copy constructor called" << std::endl;     
-    this->_x = obj._x;
-    this->_x = obj._x;    
+    *this = obj;    
 }
+
+Point &Point::operator=(const Point &obj)
+{
+    std::cout << "Copy assignment operator called" << std::endl;     
+    return *this;
+}
+
+Point::~Point()
+{
+    std::cout << "Destructor called" << std::endl;    
+}
+
