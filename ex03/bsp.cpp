@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   bsp.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: masase <marvin@42lausanne.ch>              +#+  +:+       +#+        */
+/*   By: maw <maw@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 21:02:35 by masase            #+#    #+#             */
-/*   Updated: 2025/07/28 21:02:37 by masase           ###   ####lausanne.ch   */
+/*   Updated: 2025/08/05 13:50:46 by maw              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Point.hpp"
 
+bool bsp(Point const a, Point const b, Point const c, Point const point)
+{
+	
+}
