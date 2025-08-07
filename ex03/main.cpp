@@ -10,4 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
+#include "Point.hpp"
+
+int	main(void)
+{
+    if(bsp(Point(0, 0), Point(0, 5), Point(5, 0), Point(50.1f, 50.1f)))
+        std::cout << "UEEEEE C'est DEDANSSSSS" << std::endl;
+    else
+                std::cout << "OHHHHHHHHHHHH :(" << std::endl;
+    if(bsp(Point(0, 0), Point(0, 5), Point(5, 0), Point(1, 1)))
+        std::cout << "UEEEEE C'est DEDANSSSSS" << std::endl;
+    else
+                std::cout << "OHHHHHHHHHHHH :(" << std::endl;                
+    return (0);
+}

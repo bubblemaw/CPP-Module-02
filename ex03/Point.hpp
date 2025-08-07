@@ -24,7 +24,9 @@ class   Point
         Point(const float x, const float y);
         Point(const Point &obj);
         Point &operator=(const Point &obj);
-        ~Point(); 
+        ~Point();
+        float get_x() const;
+        float get_y() const;
 };
 
 typedef struct vector
@@ -32,6 +34,14 @@ typedef struct vector
     float x;
     float y;
 }vector ;
+
+typedef struct Tnode
+{
+    Tnode *right;
+    Tnode *left;
+    Tnode();
+} Tnode;
+
 
 bool bsp(Point const a, Point const b, Point const c, Point const point);
 

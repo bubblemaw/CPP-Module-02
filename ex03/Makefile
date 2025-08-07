@@ -13,7 +13,9 @@
 NAME = Now
 
 SRCS = main.cpp \
-	Fixed.cpp
+	Point.cpp \
+	Fixed.cpp \
+	bsp.cpp \
 
 OBJS = $(SRCS:%.cpp=%.o)
 

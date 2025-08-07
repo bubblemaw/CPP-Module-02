@@ -39,3 +39,19 @@ Point::~Point()
     std::cout << "Destructor called" << std::endl;    
 }
 
+float Point::get_x() const 
+{
+    return(_x.toFloat());
+}
+
+float Point::get_y() const 
+{
+    return(_y.toFloat());
+}
+
+Tnode::Tnode(): right(NULL), left(NULL) 
+{
+    std::cout << "Node constructor called" << std::endl;  
+}
+
+
