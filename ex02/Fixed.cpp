@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maw <maw@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: masase <masase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:15:05 by masase            #+#    #+#             */
-/*   Updated: 2025/07/28 18:57:21 by maw              ###   ########.fr       */
+/*   Updated: 2025/08/11 12:05:30 by masase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,7 +152,7 @@ Fixed &Fixed::operator++(void)
 
 Fixed &Fixed::operator--(void)
 {
-    this->value += 1;
+    this->value -= 1;
     return *this;
 }
 
